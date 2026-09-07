@@ -656,13 +656,13 @@ h2 { line-height: 1.3; letter-spacing: -0.02em; }
 .learning-button--white { color: var(--learning-ink); background: #fff; border-color: #fff; }
 
 .learning-hero-visual { position: relative; min-height: 600px; }
-.learning-window { position: absolute; inset: 9% 0 9% 4%; overflow: hidden; border: 1px solid rgba(23,21,18,.18); border-radius: 3px; background: #fff; box-shadow: 0 40px 90px rgba(34,26,20,.12); }
+.learning-window { position: absolute; inset: 9% 39% 9% 0; overflow: hidden; border: 1px solid rgba(23,21,18,.18); border-radius: 3px; background: #fff; box-shadow: 0 40px 90px rgba(34,26,20,.12); }
 .learning-window-bar { height: 46px; display: flex; align-items: center; gap: 6px; padding: 0 16px; border-bottom: 1px solid #ddd8d0; }
 .learning-window-bar i { width: 7px; height: 7px; border-radius: 50%; background: #c9c3ba; }
 .learning-window-copy { padding: 12% 8%; font-size: clamp(3.3rem, 6vw, 6.3rem); font-weight: 900; line-height: .8; letter-spacing: -.08em; color: var(--learning-mint); }
 .learning-window-flow { position: absolute; inset: auto 7% 7%; display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid #d8d4cd; }
 .learning-window-flow span { padding: 16px 5px; font-size: 12px; font-weight: 700; }
-.learning-character { position: absolute; z-index: 2; right: -9%; bottom: 0; width: min(29vw, 420px); height: 74%; pointer-events: none; }
+.learning-character { position: absolute; z-index: 2; right: 0; bottom: 9%; width: 35%; height: 66%; pointer-events: none; }
 .learning-character img { object-fit: contain; object-position: bottom; }
 
 .learning-progress-section { padding: 74px 0; color: #fff; background: var(--learning-ink); }
@@ -735,18 +735,34 @@ h2 { line-height: 1.3; letter-spacing: -0.02em; }
 @media (max-width: 767px) {
   .learning-header .header-inner { min-height: 64px; }
   .learning-header .menu-button { display: block; font-size: 12px; font-weight: 800; }
-  .learning-header .main-nav { top: 64px; background: var(--learning-cream); border-radius: 0; }
-  .learning-header .learning-nav-cta { margin-left: 0; text-align: center; }
+  .learning-header .main-nav {
+    position: fixed;
+    inset: 64px 0 0;
+    width: 100%;
+    height: calc(100dvh - 64px);
+    padding: 28px 20px 24px;
+    gap: 0;
+    overflow-y: auto;
+    border: 0;
+    border-top: 1px solid rgba(23,21,18,.15);
+    border-radius: 0;
+    color: var(--learning-ink);
+    background: var(--learning-cream);
+    box-shadow: none;
+  }
+  .learning-header .main-nav a { min-height: 68px; display: flex; align-items: center; padding: 12px 4px; border-bottom: 1px solid rgba(23,21,18,.18); font-size: 25px; font-weight: 800; letter-spacing: -.04em; }
+  .learning-header .learning-nav-cta { min-height: 58px; justify-content: center; margin: auto 0 0; padding-inline: 24px; border: 0; border-radius: 999px; color: #fff; background: var(--learning-red); font-size: 16px; }
+  body.mobile-menu-open { overflow: hidden; }
   .learning-hero { min-height: auto; padding-top: 64px; }
   .learning-hero-stage { min-height: 850px; display: block; padding-top: 95px; }
   .learning-hero-line { font-size: clamp(3rem, 14vw, 4.1rem); line-height: .9; }
   .learning-hero-line--accent { margin-left: 0; }
   .learning-hero-copy > p { margin-top: 28px; font-size: 16px; }
   .learning-hero-visual { position: absolute; inset: auto 0 0; min-height: 350px; }
-  .learning-window { inset: 8% 2% 0 0; }
-  .learning-window-copy { font-size: 3rem; }
+  .learning-window { inset: 8% 47% 8% 0; }
+  .learning-window-copy { padding: 18% 8%; font-size: 2.35rem; }
   .learning-window-flow { display: none; }
-  .learning-character { right: -10%; width: 60vw; height: 88%; }
+  .learning-character { right: 0; bottom: 8%; width: 45%; height: 76%; }
   .learning-progress-grid { grid-template-columns: 1fr; }
   .learning-heading-row { display: block; margin-bottom: 44px; }
   .learning-heading-row h2 { margin-bottom: 24px; font-size: clamp(3rem, 14vw, 5rem); }
