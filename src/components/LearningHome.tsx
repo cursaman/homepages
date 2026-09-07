@@ -56,13 +56,8 @@ export default function LearningHome() {
           </div>
 
           <div className="learning-hero-visual" aria-hidden="true">
-            <div className="learning-window">
-              <div className="learning-window-bar"><i /><i /><i /></div>
-              <div className="learning-window-copy">MY FIRST<br />WEBSITE</div>
-              <div className="learning-window-flow"><span>아이디어</span><span>기획</span><span>개발</span><span>배포</span></div>
-            </div>
-            <div className="learning-character">
-              <Image src="/images/character-cool-cutout.png" alt="" fill priority loading="eager" sizes="(max-width: 767px) 45vw, 18vw" />
+            <div className="learning-teacher-image">
+              <Image src="/images/teacher.png" alt="" fill priority loading="eager" sizes="(max-width: 767px) 100vw, 46vw" />
             </div>
           </div>
         </div>
