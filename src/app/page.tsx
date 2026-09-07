@@ -1,5 +1,5 @@
-import PortfolioHome from "@/components/PortfolioHome";
+import LearningHome from "@/components/LearningHome";
 
 export default function Home() {
-  return <PortfolioHome />;
+  return <LearningHome />;
 }

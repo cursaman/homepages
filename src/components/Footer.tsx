@@ -1,14 +1,17 @@
 export default function Footer() {
   return (
-    <footer className="site-footer portfolio-footer">
+    <footer className="site-footer learning-footer">
       <div className="portfolio-shell footer-inner">
-        <strong>LEE / CHARACTER</strong>
-        <p>Character art and visual storytelling.<br />Seoul, South Korea.</p>
+        <strong>처음 만드는 AI 웹사이트</strong>
+        <p>아이디어부터 배포까지,<br />한 단계씩 완성합니다.</p>
         <div className="footer-links">
-          <a href="mailto:hello@character.studio">Email</a>
+          <a href="/start">10 STEP</a>
+          <a href="/projects">실습</a>
+          <a href="/prompts">프롬프트</a>
+          <a href="/faq">FAQ</a>
           <a href="#top">Back to top</a>
         </div>
-        <small>© 2026 LEE. All rights reserved.</small>
+        <small>© 2026 AI Web Learning</small>
       </div>
     </footer>
   );

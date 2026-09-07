@@ -4,8 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "LEE — Character Artist",
-  description: "서울을 기반으로 활동하는 캐릭터 아티스트 LEE의 포트폴리오"
+  title: "처음 만드는 AI 웹사이트",
+  description: "아이디어부터 배포까지 10단계로 경험하는 초보자용 AI 웹사이트 교육"
 };
 
 export default function RootLayout({
