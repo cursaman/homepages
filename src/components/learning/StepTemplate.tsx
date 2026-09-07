@@ -81,11 +81,11 @@ export default function StepTemplate({ step }: { step: Step }) {
   }
 
   if (!ready) {
-    return <div className="container section"><p>학습 정보를 불러오는 중입니다.</p></div>;
+    return <div className="container section step-loading"><p>학습 정보를 불러오는 중입니다.</p></div>;
   }
 
   return (
-    <div className="container step-layout section">
+    <div className="container step-layout section step-shell">
       <StepSidebar currentId={step.id} completedSteps={progress.completedSteps} />
 
       <article className="step-content">

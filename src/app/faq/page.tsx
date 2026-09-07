@@ -8,22 +8,19 @@ const faqs = [
   ["다른 PC에서도 이어지나요?", "로그인과 DB가 없는 V1에서는 기기 간 동기화되지 않습니다."],
   ["Vercel은 무엇인가요?", "GitHub의 프로젝트를 실제 인터넷 주소로 배포해주는 서비스입니다."]
 ];
+import Link from "next/link";
+import SubpageMotion from "@/components/SubpageMotion";
 
 export default function FaqPage() {
   return (
-    <section className="section">
-      <div className="container narrow">
-        <p className="eyebrow">FAQ</p>
-        <h1>자주 묻는 질문</h1>
-        <div className="stack">
-          {faqs.map(([q, a]) => (
-            <article className="card" key={q}>
-              <h2>{q}</h2>
-              <p>{a}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
+    <SubpageMotion>
+      <main className="subpage subpage-faq">
+        <header className="subpage-hero"><div className="portfolio-shell"><div className="subpage-title-line"><span>처음이라 생기는</span></div><div className="subpage-title-line subpage-title-accent"><span>당연한 질문들.</span></div><p>시작하기 전에 가장 자주 막히는 지점을 먼저 정리했습니다.</p></div></header>
+        <section className="subpage-content subpage-dark"><div className="portfolio-shell faq-list subpage-reveal">
+          {faqs.map(([q, a], index) => <details key={q}><summary><span>{String(index + 1).padStart(2, "0")}</span><strong>{q}</strong><i aria-hidden="true">+</i></summary><p>{a}</p></details>)}
+        </div></section>
+        <section className="subpage-next"><div className="portfolio-shell"><h2>질문이 풀렸다면<br />직접 만들어보세요.</h2><Link href="/steps/1" className="learning-button learning-button--dark">첫 단계 시작하기</Link></div></section>
+      </main>
+    </SubpageMotion>
   );
 }
