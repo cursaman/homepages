@@ -1,8 +1,10 @@
+import BrandLogo from "@/components/BrandLogo";
+
 export default function Footer() {
   return (
     <footer className="site-footer learning-footer">
       <div className="portfolio-shell footer-inner">
-        <strong>처음 만드는 AI 웹사이트</strong>
+        <BrandLogo compact />
         <p>아이디어부터 배포까지,<br />한 단계씩 완성합니다.</p>
         <div className="footer-links">
           <a href="/start">10 STEP</a>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import BrandLogo from "@/components/BrandLogo";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Header() {
     <header className="site-header learning-header">
       <div className="portfolio-shell header-inner">
         <Link href="/" className="brand" onClick={close}>
-          처음 만드는 AI 웹사이트
+          <BrandLogo />
         </Link>
 
         <button

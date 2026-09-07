@@ -628,7 +628,15 @@ h2 { line-height: 1.3; letter-spacing: -0.02em; }
   backdrop-filter: blur(16px);
 }
 .learning-header .header-inner { min-height: 76px; }
-.learning-header .brand { font-size: 14px; letter-spacing: -.02em; }
+.learning-header .brand { display: inline-flex; font-size: 14px; letter-spacing: -.02em; }
+.brand-logo { display: inline-flex; align-items: center; gap: 10px; color: var(--learning-red); line-height: 1; }
+.brand-logo svg { width: 34px; height: 34px; flex: 0 0 auto; }
+.brand-logo > span { display: grid; gap: 2px; }
+.brand-logo strong, .brand-logo b { font-size: 12px; letter-spacing: -.03em; }
+.brand-logo strong { color: var(--learning-ink); font-weight: 800; }
+.brand-logo b { color: var(--learning-red); font-weight: 900; }
+.brand-logo--compact strong { color: #fff; }
+.brand-logo--compact svg { width: 38px; height: 38px; }
 .learning-header .main-nav { gap: 8px; font-size: 14px; }
 .learning-header .main-nav a { padding: 10px 13px; }
 .learning-nav-cta { margin-left: 8px; border-radius: 999px; color: #fff; background: var(--learning-ink); }
@@ -734,6 +742,9 @@ h2 { line-height: 1.3; letter-spacing: -0.02em; }
 
 @media (max-width: 767px) {
   .learning-header .header-inner { min-height: 64px; }
+  .brand-logo { gap: 7px; }
+  .brand-logo svg { width: 29px; height: 29px; }
+  .brand-logo strong, .brand-logo b { font-size: 10px; }
   .learning-header .menu-button { display: block; font-size: 12px; font-weight: 800; }
   .learning-header .main-nav {
     position: fixed;
@@ -868,6 +879,19 @@ body:has(.step-shell), body:has(.step-loading) { background: #f4f0e8; }
 .step-shell .progress-fill { background: #ee4b35; }
 .step-shell .learning-block { margin-top: 10px; padding: 46px; background: #fff; }
 .step-shell .learning-block > h2:first-child { margin: 0 0 22px; font-size: clamp(1.9rem,3vw,3rem); line-height: 1.02; letter-spacing: -.05em; }
+.step-shell .learning-block > p,
+.step-shell .tip-card p,
+.step-shell .card > p,
+.step-shell .check-row,
+.step-shell .prompt-card pre {
+  max-width: 68ch;
+  font-size: 17px;
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.step-shell .learning-block > p { margin-block: 0; }
+.step-shell .learning-block > p + p { margin-top: 1.1em; }
 .step-shell .tip-card { border: 0; border-radius: 2px; background: #b9d4c9; }
 .step-shell .card { border: 0; border-radius: 2px; box-shadow: none; }
 .step-shell .prompt-card { background: #f8f5ef; }
@@ -910,5 +934,10 @@ body:has(.step-shell), body:has(.step-loading) { background: #f4f0e8; }
   .step-shell .step-page-header { min-height: 330px; padding: 28px; }
   .step-shell .step-page-header h1 { font-size: 58px; }
   .step-shell .learning-block { padding: 28px; }
+  .step-shell .learning-block > p,
+  .step-shell .tip-card p,
+  .step-shell .card > p,
+  .step-shell .check-row,
+  .step-shell .prompt-card pre { font-size: 16px; line-height: 1.75; }
   .step-shell .step-mobile-menu .button { border-radius: 999px; }
 }

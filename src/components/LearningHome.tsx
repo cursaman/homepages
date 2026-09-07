@@ -62,7 +62,7 @@ export default function LearningHome() {
               <div className="learning-window-flow"><span>아이디어</span><span>기획</span><span>개발</span><span>배포</span></div>
             </div>
             <div className="learning-character">
-              <Image src="/images/character-cool.png" alt="" fill priority loading="eager" sizes="(max-width: 767px) 58vw, 26vw" />
+              <Image src="/images/character-cool-cutout.png" alt="" fill priority loading="eager" sizes="(max-width: 767px) 45vw, 18vw" />
             </div>
           </div>
         </div>
