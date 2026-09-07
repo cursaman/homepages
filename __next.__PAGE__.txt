@@ -1,0 +1,21 @@
+1:"$Sreact.fragment"
+2:I[9766,["/homepages/_next/static/chunks/1sl23559rflcj.js","/homepages/_next/static/chunks/2gcdbhlxh3c5x.js","/homepages/_next/static/chunks/0oaxc3d1nf8tf.js"],"default"]
+3:I[97367,["/homepages/_next/static/chunks/1sl23559rflcj.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+8:I[97367,["/homepages/_next/static/chunks/1sl23559rflcj.js"],"ViewportBoundary"]
+9:I[97367,["/homepages/_next/static/chunks/1sl23559rflcj.js"],"MetadataBoundary"]
+b:I[2971,["/homepages/_next/static/chunks/1sl23559rflcj.js"],"default"]
+c:I[39756,["/homepages/_next/static/chunks/1sl23559rflcj.js"],"default"]
+d:I[37457,["/homepages/_next/static/chunks/1sl23559rflcj.js"],"default"]
+e:I[22016,["/homepages/_next/static/chunks/1sl23559rflcj.js"],""]
+:HL["/homepages/_next/static/chunks/2wui-95bbh7tj.css","style"]
+7:X
+0:{"buildId":"4EEsKWODrzekOQmDX1CP6","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","script","script-0",{"src":"/homepages/_next/static/chunks/2gcdbhlxh3c5x.js","async":true}],["$","script","script-1",{"src":"/homepages/_next/static/chunks/0oaxc3d1nf8tf.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L8",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L9",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"처음 만드는 AI 웹사이트"}],["$","meta","1",{"name":"description","content":"아이디어부터 배포까지 10단계로 경험하는 초보자용 AI 웹사이트 교육"}]]}]}]}],null]}],"isPartial":"$@a","staleTime":"$7","varyParams":null},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/homepages/_next/static/chunks/2wui-95bbh7tj.css","precedence":"next"}],["$","script","script-0",{"src":"/homepages/_next/static/chunks/1sl23559rflcj.js","async":true}]],["$","html",null,{"lang":"ko","children":["$","body",null,{"children":[["$","$Lb",null,{}],["$","main",null,{"children":["$","$Lc",null,{"parallelRouterKey":"children","template":["$","$Ld",null,{}],"notFound":[["$","section",null,{"className":"not-found-page","children":["$","div",null,{"className":"portfolio-shell center","children":[["$","p",null,{"className":"not-found-number","children":"404"}],["$","h1",null,{"children":"해당 페이지를 찾을 수 없습니다."}],["$","p",null,{"className":"lead","children":"주소를 다시 확인하거나 10 STEP에서 원하는 단계로 이동해주세요."}],["$","div",null,{"className":"learning-actions not-found-actions","children":[["$","$Le",null,{"href":"/start","className":"learning-button learning-button--dark","children":"10 STEP 보기"}],["$","$Le",null,{"href":"/","className":"learning-button learning-button--light","children":"HOME으로"}]]}]]}]}],[]]}]}],["$","footer",null,{"className":"site-footer learning-footer","children":["$","div",null,{"className":"portfolio-shell footer-inner","children":[["$","strong",null,{"children":"처음 만드는 AI 웹사이트"}],["$","p",null,{"children":["아이디어부터 배포까지,",["$","br",null,{}],"한 단계씩 완성합니다."]}],["$","div",null,{"className":"footer-links","children":[["$","a",null,{"href":"/start","children":"10 STEP"}],["$","a",null,{"href":"/projects","children":"실습"}],["$","a",null,{"href":"/prompts","children":"프롬프트"}],["$","a",null,{"href":"/faq","children":"FAQ"}],["$","a",null,{"href":"#top","children":"Back to top"}]]}],["$","small",null,{"children":"© 2026 AI Web Learning"}]]}]}]]}]}]]}],"isPartial":"$@f","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@10","rootVaryParams":null,"needsRuntimeRequest":"$@11"}
+5:null
+7:300
+11:true
+7:C
+10:0
+a:"$undefined"
+f:"$undefined"
+6:"$undefined"
