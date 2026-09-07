@@ -1,10 +1,14 @@
 import { notFound } from "next/navigation";
-import { getStepById } from "@/data/steps";
+import { getStepById, steps } from "@/data/steps";
 import StepTemplate from "@/components/learning/StepTemplate";
 
 type Props = {
   params: Promise<{ id: string }>;
 };
+
+export function generateStaticParams() {
+  return steps.map((step) => ({ id: String(step.id) }));
+}
 
 export default async function StepPage({ params }: Props) {
   const { id } = await params;
