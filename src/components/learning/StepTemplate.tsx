@@ -24,8 +24,12 @@ export default function StepTemplate({ step }: { step: Step }) {
   const [urlMessage, setUrlMessage] = useState("");
 
   useEffect(() => {
-    setProgress(loadProgress());
-    setReady(true);
+    const frame = window.requestAnimationFrame(() => {
+      setProgress(loadProgress());
+      setReady(true);
+    });
+
+    return () => window.cancelAnimationFrame(frame);
   }, []);
 
   const checks = progress.practiceChecks[step.id] ?? step.practice.map(() => false);
