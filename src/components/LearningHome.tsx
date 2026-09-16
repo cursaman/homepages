@@ -18,6 +18,8 @@ export default function LearningHome() {
   const scope = useRef<HTMLElement>(null);
 
   useGSAP(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     gsap.from(".learning-hero-line > span", {
       yPercent: 110,
       duration: 1.05,

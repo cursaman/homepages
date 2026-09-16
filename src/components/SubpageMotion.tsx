@@ -11,6 +11,8 @@ export default function SubpageMotion({ children }: { children: React.ReactNode 
   const scope = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     gsap.from(".subpage-title-line > span", {
       yPercent: 110,
       duration: 1,
