@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="not-found-page">
+    <main className="not-found-page">
       <div className="portfolio-shell center">
         <p className="not-found-number">404</p>
         <h1>해당 페이지를 찾을 수 없습니다.</h1>
@@ -12,6 +12,6 @@ export default function NotFound() {
           <Link href="/" className="learning-button learning-button--light">HOME으로</Link>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

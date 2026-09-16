@@ -81,11 +81,11 @@ export default function StepTemplate({ step }: { step: Step }) {
   }
 
   if (!ready) {
-    return <div className="container section step-loading"><p>학습 정보를 불러오는 중입니다.</p></div>;
+    return <main className="container section step-loading"><p>학습 정보를 불러오는 중입니다.</p></main>;
   }
 
   return (
-    <div className="container step-layout section step-shell">
+    <main className="container step-layout section step-shell">
       <StepSidebar currentId={step.id} completedSteps={progress.completedSteps} />
 
       <article className="step-content">
@@ -176,6 +176,6 @@ export default function StepTemplate({ step }: { step: Step }) {
           <button className="text-button" onClick={handleReset}>진행상황 초기화</button>
         </div>
       </article>
-    </div>
+    </main>
   );
 }
