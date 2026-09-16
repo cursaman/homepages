@@ -10,6 +10,13 @@ const faqs = [
 ];
 import Link from "next/link";
 import SubpageMotion from "@/components/SubpageMotion";
+import { createPageMetadata } from "@/lib/siteMetadata";
+
+export const metadata = createPageMetadata(
+  "자주 묻는 질문",
+  "코딩, AI, GitHub, localStorage와 Vercel 배포에 관한 초보자의 궁금증을 확인하세요.",
+  "/faq/"
+);
 
 export default function FaqPage() {
   return (

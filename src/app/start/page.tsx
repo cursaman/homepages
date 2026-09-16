@@ -1,6 +1,13 @@
 import Roadmap from "@/components/Roadmap";
 import Link from "next/link";
 import SubpageMotion from "@/components/SubpageMotion";
+import { createPageMetadata } from "@/lib/siteMetadata";
+
+export const metadata = createPageMetadata(
+  "10 STEP 시작하기",
+  "아이디어부터 실제 웹사이트 배포까지 이어지는 10단계 학습 과정을 확인하세요.",
+  "/start/"
+);
 
 export default function StartPage() {
   return (

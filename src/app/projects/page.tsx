@@ -8,6 +8,13 @@ const projects = [
 ];
 import Link from "next/link";
 import SubpageMotion from "@/components/SubpageMotion";
+import { createPageMetadata } from "@/lib/siteMetadata";
+
+export const metadata = createPageMetadata(
+  "실습 프로젝트",
+  "골프 기록, 여행 앨범, 포트폴리오 등 첫 웹사이트로 만들기 좋은 주제를 살펴보세요.",
+  "/projects/"
+);
 
 export default function ProjectsPage() {
   return (

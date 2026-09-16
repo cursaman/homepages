@@ -8,6 +8,13 @@ const promptGroups = [
 ];
 import Link from "next/link";
 import SubpageMotion from "@/components/SubpageMotion";
+import { createPageMetadata } from "@/lib/siteMetadata";
+
+export const metadata = createPageMetadata(
+  "상황별 프롬프트",
+  "기획, 디자인, 개발, 오류 수정과 배포에 바로 활용할 수 있는 AI 프롬프트를 확인하세요.",
+  "/prompts/"
+);
 
 export default function PromptsPage() {
   return (
