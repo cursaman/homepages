@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HomeProgress from "@/components/HomeProgress";
 import Roadmap from "@/components/Roadmap";
+import teacherImage from "../../public/images/teacher.png";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -57,7 +58,7 @@ export default function LearningHome() {
 
           <div className="learning-hero-visual" aria-hidden="true">
             <div className="learning-teacher-image">
-              <Image src="/images/teacher.png" alt="" fill priority loading="eager" sizes="(max-width: 767px) 100vw, 46vw" />
+              <Image src={teacherImage} alt="" fill priority loading="eager" sizes="(max-width: 767px) 100vw, 46vw" />
             </div>
           </div>
         </div>
