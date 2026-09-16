@@ -155,7 +155,9 @@ export default function StepTemplate({ step }: { step: Step }) {
           <section className="learning-block card">
             <p className="eyebrow">MY LIVE SITE</p>
             <h2>나의 첫 웹사이트</h2>
+            <label htmlFor="site-url"><strong>배포된 사이트 주소</strong></label>
             <input
+              id="site-url"
               className="url-input"
               type="text"
               placeholder="my-site.vercel.app"
