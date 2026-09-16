@@ -32,12 +32,13 @@ export default function Header() {
           className="menu-button"
           aria-label={open ? "메뉴 닫기" : "메뉴 열기"}
           aria-expanded={open}
+          aria-controls="main-navigation"
           onClick={() => setOpen((value) => !value)}
         >
           {open ? "Close" : "Menu"}
         </button>
 
-        <nav className={`main-nav ${open ? "open" : ""}`} aria-label="주 메뉴">
+        <nav id="main-navigation" className={`main-nav ${open ? "open" : ""}`} aria-label="주 메뉴">
           <Link href="/start" onClick={close}>10 STEP</Link>
           <Link href="/projects" onClick={close}>실습</Link>
           <Link href="/prompts" onClick={close}>프롬프트</Link>

@@ -70,6 +70,8 @@ button, input { font: inherit; }
 
 .menu-button {
   display: none;
+  min-width: 48px;
+  min-height: 48px;
   border: 0;
   background: transparent;
   font-size: 28px;
