@@ -631,14 +631,10 @@ h2 { line-height: 1.3; letter-spacing: -0.02em; }
 }
 .learning-header .header-inner { min-height: 76px; }
 .learning-header .brand { display: inline-flex; font-size: 14px; letter-spacing: -.02em; }
-.brand-logo { display: inline-flex; align-items: center; gap: 10px; color: var(--learning-red); line-height: 1; }
-.brand-logo svg { width: 34px; height: 34px; flex: 0 0 auto; }
-.brand-logo > span { display: grid; gap: 2px; }
-.brand-logo strong, .brand-logo b { font-size: 12px; letter-spacing: -.03em; }
-.brand-logo strong { color: var(--learning-ink); font-weight: 800; }
-.brand-logo b { color: var(--learning-red); font-weight: 900; }
-.brand-logo--compact strong { color: #fff; }
-.brand-logo--compact svg { width: 38px; height: 38px; }
+.brand-logo { display: inline-flex; align-items: baseline; gap: 9px; line-height: 1; }
+.brand-logo__mark { color: var(--learning-red); font-size: 21px; font-weight: 900; letter-spacing: -.06em; }
+.brand-logo__name { color: var(--learning-ink); font-size: 13px; font-weight: 800; letter-spacing: -.035em; }
+.brand-logo--compact .brand-logo__name { color: #fff; }
 .learning-header .main-nav { gap: 8px; font-size: 14px; }
 .learning-header .main-nav a { padding: 10px 13px; }
 .learning-nav-cta { margin-left: 8px; border-radius: 999px; color: #fff; background: var(--learning-ink); }
@@ -747,8 +743,8 @@ h2 { line-height: 1.3; letter-spacing: -0.02em; }
 @media (max-width: 767px) {
   .learning-header .header-inner { min-height: 64px; }
   .brand-logo { gap: 7px; }
-  .brand-logo svg { width: 29px; height: 29px; }
-  .brand-logo strong, .brand-logo b { font-size: 10px; }
+  .brand-logo__mark { font-size: 19px; }
+  .brand-logo__name { font-size: 11px; }
   .learning-header .menu-button { display: block; font-size: 12px; font-weight: 800; }
   .learning-header .main-nav {
     position: fixed;
