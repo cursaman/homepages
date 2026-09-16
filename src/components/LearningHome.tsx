@@ -46,8 +46,10 @@ export default function LearningHome() {
       <section className="learning-hero" id="top">
         <div className="portfolio-shell learning-hero-stage">
           <div className="learning-hero-copy">
-            <div className="learning-hero-line"><span>처음 만드는</span></div>
-            <div className="learning-hero-line learning-hero-line--accent"><span>AI 웹사이트</span></div>
+            <h1 className="learning-hero-heading">
+              <span className="learning-hero-line"><span>처음 만드는</span></span>
+              <span className="learning-hero-line learning-hero-line--accent"><span>AI 웹사이트</span></span>
+            </h1>
             <p>코딩부터 시작하지 않습니다.<br />아이디어부터 인터넷 배포까지 10단계로 직접 경험합니다.</p>
             <div className="learning-actions">
               <Link href="/steps/1" className="learning-button learning-button--dark">STEP 01 시작하기</Link>

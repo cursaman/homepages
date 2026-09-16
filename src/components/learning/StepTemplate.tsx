@@ -67,8 +67,10 @@ export default function StepTemplate({ step }: { step: Step }) {
   }
 
   function openSite() {
-    const normalized = normalizeUrl(progress.siteUrl);
+    const value = progress.siteUrl.trim();
+    const normalized = normalizeUrl(value);
     try {
+      if (/\s/.test(value)) throw new Error();
       const parsed = new URL(normalized);
       if (!["http:", "https:"].includes(parsed.protocol)) throw new Error();
       setUrlMessage("");

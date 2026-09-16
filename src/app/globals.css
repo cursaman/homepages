@@ -649,7 +649,8 @@ h2 { line-height: 1.3; letter-spacing: -0.02em; }
 }
 .learning-hero-stage { position: relative; min-height: calc(100svh - 76px); display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 5vw; padding-block: 9vh 7vh; }
 .learning-hero-copy { position: relative; z-index: 3; }
-.learning-hero-line { max-width: 1120px; overflow: hidden; font-size: clamp(3.4rem, 7.4vw, 7.4rem); font-weight: 900; line-height: .88; letter-spacing: -.075em; white-space: nowrap; }
+.learning-hero-heading { margin: 0; }
+.learning-hero-line { display: block; max-width: 1120px; overflow: hidden; font-size: clamp(3.4rem, 7.4vw, 7.4rem); font-weight: 900; line-height: .88; letter-spacing: -.075em; white-space: nowrap; }
 .learning-hero-line > span { display: block; }
 .learning-hero-line--accent { margin-left: 6vw; color: var(--learning-red); }
 .learning-hero-copy > p { margin: 42px 0 0; font-size: 18px; color: #68635c; }
